@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Donor</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #f4f6f9;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #c31432, #240b36);
+        }
+
+        .navbar a {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-danger {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            border: none;
+        }
+
+        .hero {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .right-box {
+            background: #fff5f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background: #c31432;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔴 Navbar -->
+<nav class="navbar navbar-expand-lg px-4">
+    <a class="navbar-brand text-white fw-bold" href="#">🩸 Blood Donor</a>
+
+    <div class="ms-auto">
+        <a href="/" class="mx-3">Home</a>
+        <a href="/register" class="mx-3">Register</a>
+        <a href="/donors" class="mx-3">View</a>
+        <a href="/request" class="mx-3">Request</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <!-- 🔴 Header -->
+    <div class="hero">
+        <h2 class="fw-bold">Register as a Donor</h2>
+        <p>Your donation can save many lives.</p>
+    </div>
+
+    <div class="row">
+
+        <!-- LEFT FORM -->
+        <div class="col-md-8">
+            <div class="card p-4">
+
+                <h5 class="text-danger mb-3"><i class="fa fa-user"></i> Donor Information</h5>
+
+                <form method="POST">
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Full Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Enter name" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Age</label>
+                            <input type="number" name="age" class="form-control" placeholder="Enter age" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Blood Group</label>
+                            <select name="blood" class="form-control">
+                                <option>A+</option><option>B+</option>
+                                <option>O+</option><option>AB+</option>
+                                <option>A-</option><option>B-</option>
+                                <option>O-</option><option>AB-</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Contact</label>
+                            <input type="text" name="contact" class="form-control" placeholder="Phone number" required>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-danger px-4">Register Donor</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE INFO -->
+        <div class="col-md-4">
+            <div class="right-box">
+
+                <h5 class="text-danger">❤️ Why Donate Blood?</h5>
+
+                <p><b>✔ Save Lives</b><br>One donation can save 3 lives.</p>
+
+                <p><b>✔ Stay Healthy</b><br>Improves heart health.</p>
+
+                <p><b>✔ Help Others</b><br>Be a hero in your community.</p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 🔴 Footer -->
+<div class="footer">
+    © 2026 Blood Donor Management System
+</div>
+
+</body>
+</html>
